@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Globe from 'react-globe.gl';
 
 import Button from '../components/Button.jsx';
@@ -7,7 +7,7 @@ const About = () => {
     const [hasCopied, setHasCopied] = useState(false);
 
     const handleCopy = () => {
-        navigator.clipboard.writeText(' adrian@jsmastery.pro');
+        navigator.clipboard.writeText('srinivas.sir@northeastern.edu');
         setHasCopied(true);
 
         setTimeout(() => {
@@ -23,10 +23,9 @@ const About = () => {
                         <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
                         <div>
-                            <p className="grid-headtext">Hi, I’m Adrian Hajdin</p>
+                            <p className="grid-headtext">I'm Siri Srinivas</p>
                             <p className="grid-subtext">
-                                With 12 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
-                                and responsive websites.
+                                I'm a Master's student in Computer Science at Northeastern University, with experience in software engineering.
                             </p>
                         </div>
                     </div>
@@ -39,8 +38,7 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
                             <p className="grid-subtext">
-                                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-                                applications
+                                I specialize in Java, OOPs, Python, Web technologies like JavaScript, React, MySQL and AWS.
                             </p>
                         </div>
                     </div>
@@ -58,14 +56,20 @@ const About = () => {
                                 showGraticules
                                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                                labelsData={[{ lat: 40, lng: -100, text: 'Rjieka, Croatia', color: 'white', size: 15 }]}
+                                labelsData={[{ lat: 42.3601, lng: -71.0589, text: 'Boston, MA', color: 'white', size: 15 }]}
                             />
                         </div>
-                        <div>
-                            <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-                            <p className="grid-subtext">I&apos;m based in Rjieka, Croatia and open to remote work worldwide.</p>
-                            <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
-                        </div>
+                        <p>
+                            <p className="grid-headtext">Based in Boston, open to opportunities worldwide</p>
+                            <p className="grid-subtext">I'm currently in Boston, MA and available for new opportunities
+                                starting May 2025.</p>
+                            <p>
+                                <a href="#contact" className="w-fit">
+                                    <Button name="Contact Me" isBeam containerClass="w-full mt-10"/>
+                                </a>
+                            </p>
+                        </p>
+
                     </div>
                 </div>
 
@@ -74,10 +78,11 @@ const About = () => {
                         <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
                         <div>
-                            <p className="grid-headtext">My Passion for Coding</p>
+                            <p className="grid-headtext">My Passion for Technology</p>
                             <p className="grid-subtext">
-                                I love solving problems and building things through code. Programming isn&apos;t just my
-                                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                                I'm passionate about solving complex problems and building innovative solutions. There's always something new to learn in tech, and I'm here for it! </p>
+                            <p className="grid-subtext">
+                                Right now, I'm on the lookout for full-time SDE roles in full-stack or backend development.
                             </p>
                         </div>
                     </div>
@@ -95,7 +100,7 @@ const About = () => {
                             <p className="grid-subtext text-center">Contact me</p>
                             <div className="copy-container" onClick={handleCopy}>
                                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">adrian@jsmastery.pro</p>
+                                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">srinivas.sir@northeastern.edu</p>
                             </div>
                         </div>
                     </div>

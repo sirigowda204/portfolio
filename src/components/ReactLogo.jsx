@@ -3,7 +3,7 @@ import {Float, useGLTF} from '@react-three/drei'
 const ReactLogo = (props) => {
     const { nodes, materials } = useGLTF('/models/react.glb')
     return (
-        <Float floattIntensity={1}>
+        <Float floattIntensity={0.6}>
             <group position={[8,8,0]} scale={0.4} {...props} dispose={null}>
                 <mesh
                     geometry={nodes['React-Logo_Material002_0'].geometry}

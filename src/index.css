@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #010103;
+    background: #fcfcfc;
     font-family: 'General Sans', sans-serif;
 }
 
@@ -39,7 +39,11 @@ body {
     }
 
     .text-gray_gradient {
-        @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
+        @apply bg-gradient-to-r from-[#8B8E9A] from-60% via-[#A0A3B4] via-60% to-[#A0A3B4] to-100% bg-clip-text text-transparent;
+    }
+
+    .text-black_gradient {
+        @apply bg-gradient-to-r from-[#3D3F42] from-60% via-[#4D4F54] via-60% to-[#4D4F54] to-100% bg-clip-text text-transparent;
     }
 
     /* button component */
@@ -62,7 +66,7 @@ body {
 
     /* about section */
     .grid-container {
-        @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+        @apply w-full h-full border border-black-300 bg-black-600 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
     }
 
     .grid-headtext {

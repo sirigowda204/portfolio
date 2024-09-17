@@ -1,16 +1,15 @@
 import React, {Suspense} from 'react'
-import HackerRoom from "../components/HackerRoom.jsx";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import {PerspectiveCamera} from "@react-three/drei";
 import {Canvas} from "@react-three/fiber";
 import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
-import Target from "../components/Target.jsx";
 import ReactLogo from "../components/ReactLogo.jsx";
-import Cube from "../components/Cube.jsx";
-import Rings from "../components/Rings.jsx";
-import HeroCamera from "../components/HeroCamera.jsx";
 import Button from "../components/Button.jsx";
+import {Leva, useControls} from "leva";
+import JavaLogo from "../components/JavaLogo.jsx";
+import PythonLogo from "../components/PythonLogo.jsx";
+import Webdev from "../components/Webdev.jsx";
 
 const Hero = () => {
     const isSmall = useMediaQuery({maxWidth: 440});
@@ -18,47 +17,64 @@ const Hero = () => {
     const isTablet = useMediaQuery({minWidth: 768, maxWidth: 1024});
     const sizes = calculateSizes(isSmall, isMobile, isTablet);
     return (
-        <section className="min-h-screen w-full flex flex-col relative">
-            <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
-                <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
-                    Hi, I am Adrian <span className="waving-hand">👋</span>
-                </p>
-                <p className="hero_tag text-gray_gradient">
-                    Building Products & Brands
-                </p>
+        <section className="min-h-screen w-full flex flex-col relative" id="home">
+            <div className="container mx-auto px-4 py-16 sm:py-24">
+                <div className="text-center mb-12">
+                    <h1 className="text-4xl sm:text-5xl font-bold mb-4" style={{fontFamily: 'Merriweather, serif'}}>
+                        <span className="text-black_gradient">Hello, I'm Siri</span> <span className="waving-hand">👋</span>
+                    </h1>
+                    <p className="text-xl sm:text-2xl text-black_gradient">
+                        Software Developer | MSCS Student
+                    </p>
+                </div>
+
+                <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div className="p-8">
+                        <p className="text-lg mb-4">
+                            I'm currently pursuing a Master's in Computer Science (MSCS) at Northeastern University,
+                            with an expected graduation in 2025. Alongside my studies, I'm working as a Software Engineer at Quickbase.
+                        </p>
+                        <p className="text-lg mb-4">
+                            I'm excited to be attending the Grace Hopper Celebration '24. Let's connect on{' '}
+                            <a href="https://www.linkedin.com/in/sirisrinivasa" target="_blank" rel="noopener noreferrer"
+                               className="text-blue-600 hover:text-blue-800 underline">
+                                LinkedIn
+                            </a>.
+                        </p>
+                        <p className="text-lg">
+                            For a comprehensive overview of my experience, feel free to check out my{' '}
+                            <a href="../../public/assets/SiriSrinivas_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                               className="text-blue-600 hover:text-blue-800 underline">
+                                resume
+                            </a>.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div className="w-full h-full absolute inset-0">
-                {/*<Leva />*/}
+            <div className="w-full h-full absolute right-0 top-0">
+                <Leva/>
                 <Canvas className="w-full h-full">
-                    <Suspense fallback={<CanvasLoader />}>
-                        <PerspectiveCamera makeDefault position={[0,0,20]} />
-                        <HeroCamera isMobile={isMobile} >
-                            <HackerRoom
-                                scale={sizes.deskScale}
-                                position={sizes.deskPosition}
-                                rotation={[0,-Math.PI,0]}
-                                // position={[controls.positionX, controls.positionY, controls.positionZ]}
-                                // rotation={[controls.rotationX, controls.rotationY, controls.rotationZ]}
-                                // scale={[controls.scale, controls.scale, controls.scale]}
-                            />
-                        </HeroCamera>
-                        <group>
-                            <Target position={sizes.targetPosition} />
-                            <ReactLogo position={sizes.reactLogoPosition} />
-                            <Cube position={sizes.cubePosition}/>
-                            <Rings position={sizes.ringPosition}/>
+                    <Suspense fallback={<CanvasLoader/>}>
+                        <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
+                        <group scale={0.8}>
+                            <ReactLogo position={sizes.reactLogoPosition}/>
+                            <JavaLogo position={sizes.javaLogoPosition}/>
+                            <PythonLogo position={sizes.pythonLogoPosition}/>
+                            <Webdev position={sizes.webdevPosition}/>
                         </group>
-                        <ambientLight intensity={1} />
-                        <directionalLight position={[10,10,10]} intensity={0.5} />
+                        <ambientLight intensity={1}/>
+                        <directionalLight position={[10, 10, 10]} intensity={0.5}/>
                     </Suspense>
                 </Canvas>
             </div>
             <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
                 <a href="#contact" className="w-fit">
-                    <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
+                    <Button name="Let's Connect" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
                 </a>
             </div>
         </section>
     )
 }
 export default Hero
+
+
