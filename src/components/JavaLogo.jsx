@@ -7,7 +7,7 @@ const JavaLogo = (props) => {
     const { actions } = useAnimations(animations, group)
     return (
         <Float floattIntensity={1} >
-            <group name="Sketchfab_Scene" ref={group} {...props} dispose={null} scale={0.5}>
+            <group name="Sketchfab_Scene" ref={group} {...props} dispose={null} scale={0.6}>
                 <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
                     <group name="Root">
                         <group name="Cube">

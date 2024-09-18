@@ -69,6 +69,10 @@ body {
         @apply w-full h-full border border-black-300 bg-black-600 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
     }
 
+    .grid-container-white {
+        @apply w-full h-full border border-white-600 bg-white-600 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    }
+
     .grid-headtext {
         @apply text-xl font-semibold mb-2 text-white font-generalsans;
     }

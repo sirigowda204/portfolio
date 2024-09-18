@@ -5,7 +5,7 @@ const PythonLogo = (props) => {
     const { nodes, materials } = useGLTF('/models/python_programming_language.glb')
     return (
         <Float floatIntensity={1}>
-        <group {...props} dispose={null} scale={0.3}>
+        <group {...props} dispose={null} scale={0.4}>
             <mesh
                 castShadow
                 receiveShadow

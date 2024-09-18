@@ -80,7 +80,7 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">My Passion for Technology</p>
                             <p className="grid-subtext">
-                                I'm passionate about solving complex problems and building innovative solutions. There's always something new to learn in tech, and I'm here for it! </p>
+                                To me, computer science is about solving complex problems and building innovative solutions. There's always something new to learn in tech, and I'm here for it! </p>
                             <p className="grid-subtext">
                                 Right now, I'm on the lookout for full-time SDE roles in full-stack or backend development.
                             </p>
