@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
     return (
@@ -8,18 +8,28 @@ const Footer = () => {
                 <p>|</p>
                 <p>Privacy Policy</p>
             </div>
+
+            {/* Social Media Links */}
             <div className="flex gap-3">
-                <div className="social-icon">
-                    <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2"/>
-                </div>
-                <div className="social-icon">
-                    <img src="/assets/linkedin.svg" alt="linkedin" className="w-1/2 h-1/2"/>
-                </div>
+                {/* GitHub */}
+                <a href="https://github.com/sirigowda204" target="_blank" rel="noopener noreferrer">
+                    <div className="social-icon">
+                        <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2"/>
+                    </div>
+                </a>
+                {/* LinkedIn */}
+                <a href="https://www.linkedin.com/in/sirisrinivasa" target="_blank" rel="noopener noreferrer">
+                    <div className="social-icon">
+                        <img src="/assets/linkedin.png" alt="linkedin" className="w-1/2 h-1/2"/>
+                    </div>
+                </a>
             </div>
+
             <p className="text-white-500">
                 © 2024 Siri Srinivas. All Rights Reserved.
             </p>
         </section>
-    )
-}
-export default Footer
+    );
+};
+
+export default Footer;
