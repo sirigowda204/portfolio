@@ -39,7 +39,7 @@ const Hero = () => {
                             Engineer at Quickbase.
                         </p>
                         <p className="text-lg mb-6 leading-relaxed">
-                            I'm excited to be attending the Grace Hopper Celebration '24. Let's connect on{' '}
+                            I'm excited to be attending the Society of Women Engineers (SWE) Conference. I also attended the Grace Hopper Celebration '24. Let's connect on{' '}
                             <a href="https://www.linkedin.com/in/sirisrinivasa" target="_blank"
                                rel="noopener noreferrer"
                                className="text-blue-600 hover:text-blue-800 underline font-semibold transition duration-300">
@@ -48,7 +48,7 @@ const Hero = () => {
                         </p>
                         <p className="text-lg leading-relaxed">
                             For a comprehensive overview of my experience, feel free to check out my{' '}
-                            <a href="/assets/SiriSrinivas_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                            <a href="/SiriSrinivas_Resume.pdf" target="_blank" rel="noopener noreferrer"
                                className="text-blue-600 hover:text-blue-800 underline font-semibold transition duration-300">
                                 resume
                             </a>.
