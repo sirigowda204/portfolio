@@ -23,10 +23,10 @@ export const navLinks = [
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
-        pythonLogoPosition: isSmall ? [-3, -6, 0] : isMobile ? [6, -4, 0] : isTablet ? [6, -4, 0] : [6, -4, 0],
-        javaLogoPosition: isSmall ? [0, 2, 0] : isMobile ? [3, -4, 0] : isTablet ? [3, -4, 0] : [3, -4, 0],
-        reactLogoPosition: isSmall ? [3, 3, 0] : isMobile ? [0, -4, 0] : isTablet ? [0, -4, 0] : [0, -4, 0],
-        webdevPosition: isSmall ? [-3, -3, 0] : isMobile ? [-5, -5, 0] : isTablet ? [-5, -5, 0] : [-5, -6, 0],
+        pythonLogoPosition: isSmall ? [-3, -6, 0] : isMobile ? [6, -4, 0] : isTablet ? [12, 4, 0] : [12, 4, 0],
+        javaLogoPosition: isSmall ? [0, 2, 0] : isMobile ? [3, -4, 0] : isTablet ? [12, 0, 0] : [12, 0, 0],
+        reactLogoPosition: isSmall ? [3, 3, 0] : isMobile ? [0, -4, 0] : isTablet ? [12, -4, 0] : [12, -4, 0],
+        webdevPosition: isSmall ? [-3, -3, 0] : isMobile ? [-5, -5, 0] : isTablet ? [-13, -1, 0] : [-13, -1, 0],
     };
 };
 
@@ -35,7 +35,7 @@ export const workExperiences = [
     {
         name: "Quickbase",
         pos: "Software Engineer Co-op",
-        duration: "July 2024 – Present",
+        duration: "July 2024 – Dec 2024",
         title: "Building and deploying plug-in features from scratch for their platform using React and Javascript, used by 25,000+ companies.",
         icon: "/assets/quickbase.png",
         animation: "quickbase"
@@ -71,7 +71,7 @@ export const educationDetails = [
         institution: "Northeastern University",
         degree: "Master's in Computer Science (MSCS)",
         year: "2023 - 2025",
-        details: "Programming Design Paradigm, Algorithms, Web Development, Database Management Systems, Scalable Distributed Systems",
+        details: "Programming Design Paradigm, Algorithms, Web Development, Database Management Systems, Scalable Distributed Systems, Machine Learning Operations",
         icon: "/assets/northeastern.png" // Optional: Path to the logo of the institution
     },
     {

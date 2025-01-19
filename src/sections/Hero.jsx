@@ -21,33 +21,49 @@ const Hero = () => {
         <section className="min-h-screen w-full flex flex-col relative" id="home">
             <div className="container mx-auto px-4 py-16 sm:py-24 z-10">
                 <div className="text-center mb-12">
-                    <h1 className="text-5xl sm:text-6xl font-bold mb-4" style={{fontFamily: 'Merriweather, serif'}}>
+                    <h1 className="text-4xl sm:text-6xl font-bold mb-4" style={{fontFamily: 'Merriweather, serif'}}>
                         <span className="text-black_gradient">Hello, I'm Siri</span> <span
                         className="waving-hand">👋</span>
                     </h1>
-                    <p className="text-2xl sm:text-3xl text-black_gradient font-semibold">
-                        Software Developer | MSCS Student
+                    <p className="text-xl sm:text-3xl text-black_gradient font-semibold">
+                        SOFTWARE DEVELOPER | MSCS @ Northeastern
                     </p>
                 </div>
-
                 <div
                     className="max-w-3xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden backdrop-filter backdrop-blur-lg bg-opacity-80">
                     <div className="p-8">
-                        <p className="text-lg mb-6 leading-relaxed">
-                            I'm currently pursuing a Master's in Computer Science (MSCS) at Northeastern University,
-                            with an expected graduation in 2025. Alongside my studies, I'm working as a Software
-                            Engineer at Quickbase.
+                        <p className="text-lg mb-6 leading-relaxed text-gray-600">
+                            I'm pursuing a Master's in Computer Science (MSCS) at Northeastern University.
+                            Alongside my studies, I have gained industry experience as a Software Engineer Intern @
+                            Quickbase and a Technology Consultant Intern @ PwC.
+                            <br />
+                                Currently, I am working as a Teaching Assistant for Scalable Distributed Systems.
                         </p>
-                        <p className="text-lg mb-6 leading-relaxed">
-                            I'm excited to be attending the Society of Women Engineers (SWE) Conference. I also attended the Grace Hopper Celebration '24. Let's connect on{' '}
+
+                        <h2 className="text-xl font-semibold mb-4 text-gray-800">GRADUATION</h2>
+                        <p className="text-lg mb-6 leading-relaxed text-gray-600">
+                            I have the option to graduate in <strong className="font-bold text-gray-700">Summer
+                            2025</strong> or <strong className="font-bold text-gray-700">December 2025</strong>,
+                            depending on opportunities. I am actively seeking <strong
+                            className="font-bold text-gray-700">full-time SWE roles or
+                            internships</strong> starting May 2025.
+                        </p>
+
+                        <h2 className="text-xl font-semibold mb-4 text-gray-800">CONFERENCES</h2>
+                        <p className="text-lg mb-6 leading-relaxed text-gray-600">
+                            I attended the Grace Hopper Celebration <strong className="font-bold text-gray-700">(GHC'24)</strong> and
+                            the Society of Women Engineers <strong className="font-bold text-gray-700">(WE'24)</strong> Conference.
+                        </p>
+
+                        <p className="text-lg leading-relaxed text-gray-600">
+                            Find me on{' '}
                             <a href="https://www.linkedin.com/in/sirisrinivasa" target="_blank"
                                rel="noopener noreferrer"
                                className="text-blue-600 hover:text-blue-800 underline font-semibold transition duration-300">
                                 LinkedIn
                             </a>.
-                        </p>
-                        <p className="text-lg leading-relaxed">
-                            For a comprehensive overview of my experience, feel free to check out my{' '}
+                            <br />
+                            Feel free to check out my{' '}
                             <a href="/SiriSrinivas_Resume.pdf" target="_blank" rel="noopener noreferrer"
                                className="text-blue-600 hover:text-blue-800 underline font-semibold transition duration-300">
                                 resume
@@ -55,6 +71,7 @@ const Hero = () => {
                         </p>
                     </div>
                 </div>
+
             </div>
             {showCanvas && (
                 <div className="w-full h-full absolute right-0 top-0">
